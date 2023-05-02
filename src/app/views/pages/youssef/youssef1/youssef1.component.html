@@ -1,0 +1,33 @@
+<nav class="page-breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink=".">Youssef</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Ngx-Datatable</li>
+    </ol>
+  </nav>
+<div class="row">
+    <div class="col-md-12 stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="card-title">Ngx-Datatable</h6>
+<div class="table-responsive">
+<ngx-datatable
+            class="bootstrap"
+            [rows]="rows"
+            [columnMode]="ColumnMode.force"
+            [loadingIndicator]="loadingIndicator"
+            [footerHeight]="50"
+            rowHeight="auto"
+            [limit]="10" 
+          >
+            <ngx-datatable-column name="Id"></ngx-datatable-column>
+            <ngx-datatable-column name="Name"></ngx-datatable-column>
+            <ngx-datatable-column name="Gender"></ngx-datatable-column>
+            <ngx-datatable-column name="Age"></ngx-datatable-column>
+            <ngx-datatable-column name="Phone" ></ngx-datatable-column>
+            <ngx-datatable-column name="Email" ></ngx-datatable-column>
+          </ngx-datatable>
+        </div>
+    </div>
+</div>
+</div>
+</div>
